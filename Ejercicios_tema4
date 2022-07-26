@@ -1,0 +1,46 @@
+/* Online Java Compiler and Editor */
+public class Main {
+
+     public static void main(String[] args){
+        
+        int numeroif = 0;
+        int numeroWhile = 2;
+        var estacion = "invierno";
+        
+        if (numeroif > 0){
+            System.out.println("Numero positivo");
+        } else if ( numeroif < 0) {
+            System.out.println("Numero negativo");
+        } else if (numeroif ==0) {
+            System.out.println("Numero igual a '0'");
+        }
+        while (numeroWhile < 3){
+            System.out.println(numeroWhile);
+            numeroWhile++;
+        }
+        do {
+            System.out.println(numeroWhile);
+            numeroWhile++;
+        } while (numeroWhile < 3);
+            
+        for (int numeroFor = 0; numeroFor <= 3; numeroFor++) {
+            System.out.println(numeroFor);
+        }
+        switch (estacion) {
+            case "invierno": 
+                System.out.println("Es invierno"); 
+                break;
+            case "verano": 
+                System.out.println("Es verano"); 
+                break;
+            case "otono": 
+                System.out.println("Es otono"); 
+                break;
+            case "primavera": 
+                System.out.println("Es primavera"); 
+                break;
+            default : 
+            System.out.println("Variable 'estacion' no corresponde con ninguna estacion!");
+        }
+     }
+}
