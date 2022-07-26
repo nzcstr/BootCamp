@@ -1,0 +1,36 @@
+
+public class Main {
+
+    public static void main(String[] args) {
+        int arg1 = 2;
+        int arg2 = 3;
+        int arg3 = 4;
+        int out;
+        out = sum(arg1, arg2, arg3);
+        System.out.println(out);
+        
+        Coche miCoche = new Coche();
+        miCoche.addDoor();
+        miCoche.addDoor();
+        miCoche.addDoor();
+        System.out.println(miCoche.puertas);
+    }
+
+    public static int sum(int a, int b, int c) {
+        int result; 
+        result = a + b + c ;
+        return result;
+
+    }
+
+}
+class Coche {
+    public int puertas = 0;
+        
+    public void addDoor() {
+        this.puertas++;
+    }
+        
+        
+}
+
