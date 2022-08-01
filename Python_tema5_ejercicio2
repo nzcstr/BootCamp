@@ -1,0 +1,10 @@
+def isPrimo(num):
+    lista = [num % i  for i in range(2, num)]
+    if 0 not in lista:
+        print(num, "Es un numero PRIMO!")
+    else:
+        print(num, "No es un numero PRIMO!")
+        
+isPrimo(7)
+
+isPrimo(4)
