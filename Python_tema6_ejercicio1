@@ -1,0 +1,16 @@
+class Vehiculo:
+    color = None
+    ruedas = None
+    puertas = None
+class coche(Vehiculo):
+    velocidad = None
+    cilindrada = None
+    def __init__(self):
+        self.velocidad = 80
+        self.cilindrada = 60
+        self.color = "Rojo"
+        self.ruedas = 4
+        self.puertas = 3
+        
+myCar = coche()
+print(vars(myCar))
