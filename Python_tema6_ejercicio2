@@ -1,0 +1,16 @@
+class Alumno:
+    def __init__(self):
+        nombre = None
+        nota = None
+    def isAprobado(self):
+        if self.nota >= 5:
+            print(self.nombre, "Ha aprobado")
+        elif self.nota < 5:
+            print(self.nombre, "Ha suspendido")
+            
+            
+alumn1 = Alumno()
+alumn1.nombre = "Juan"
+alumn1.nota = 4
+
+alumn1.isAprobado()
