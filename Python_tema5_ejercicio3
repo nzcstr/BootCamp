@@ -1,0 +1,9 @@
+def isBisiesto(year):
+    if year % 4 == 0:
+        print(year, "Es un año bisiesto")
+    else:
+        print(year, "No es un año bisiesto")
+        
+
+isBisiesto(2004)
+isBisiesto(2007)
